@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MiniProject.Models.Contact>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@foreach (var item in Model)
+{
+    <p>
+        @item.Email<br />
+        @item.Phone
+    </p>
+}
+
+
